@@ -26,5 +26,6 @@ fun getDockerServices(): Map<String, String> {
     } catch (e: Exception) {
         println("Error occurred while fetching Docker services: ${e.message}")
     }
+    println("Service Map: $serviceMap")
     return serviceMap
 }
